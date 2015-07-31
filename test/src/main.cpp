@@ -1,10 +1,14 @@
 #include <iostream>
 
 #include <plank/src/test.h>
+#include "test.h"
 
 int main(int argc, const char * argv[])
 {
-	ASSERT(1);
-	std::cout << "hello test cases" << std::endl;
+    using namespace om636;
+
+	run_math_test<void>();
+
+	run_matrix_test();
 	return 0;
 }
