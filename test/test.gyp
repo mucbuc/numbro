@@ -5,7 +5,6 @@
 		'lib/numbro/def.gypi',
 		'lib/sense/def.gypi',
 		'lib/static/def.gypi',
-		'plank/def/cpp11.gypi',
 		'plank/def/mac-targets.gypi',
 	],#includes
 	'target_defaults': {
