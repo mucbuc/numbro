@@ -12,6 +12,7 @@ objective:
 #define SUBJECT_H__3OinTKlusSf57wk9G41geIdYXzUEVv
 
 #include <vector> 
+#include <algorithm>
 
 #include <lib/context/src/default_subject.h> 
 
