@@ -27,7 +27,7 @@ namespace
     	typedef context< tuple< unsigned, unsigned, unsigned >, vec > context_type;
 		
 		context_type a( make_tuple( 1, 2, 4 ) );
-		a[index<2>()] = 0;
+		a[om636::index<2>()] = 0;
 		cout << a << endl;
 
 
