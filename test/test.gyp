@@ -1,11 +1,6 @@
 {
 	'includes':[
-		'lib/context/def.gypi',
-		'lib/drop/def.gypi',
 		'lib/numbro/def.gypi',
-		'lib/sense/def.gypi',
-		'lib/static/def.gypi',
-		'plank/def/mac-targets.gypi',
 		'plank/def/plank.gypi',
 	],#includes
 	'target_defaults': {

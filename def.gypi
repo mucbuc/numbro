@@ -1,4 +1,9 @@
-{
+{	'include': [
+		'../context/def.gypi',
+		'../drop/def.gypi',
+		'../sense/def.gypi',
+		'../static/def.gypi',
+	],
 	'target_defaults': {
 		'sources': [
 			'src/additive.h',
