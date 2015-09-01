@@ -1,4 +1,4 @@
-{	'include': [
+{	'includes': [
 		'../context/def.gypi',
 		'../drop/def.gypi',
 		'../sense/def.gypi',
