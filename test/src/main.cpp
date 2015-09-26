@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include <plank/src/test.h>
 #include "test.h"
+#include "matrix_test.h"
 
 int main(int argc, const char * argv[])
 {

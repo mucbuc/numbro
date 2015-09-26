@@ -30,7 +30,6 @@ namespace
 		a[om636::index<2>()] = 0;
 		cout << a << endl;
 
-
 		FOOTER;
     }
 
