@@ -9,8 +9,8 @@
 			"path": "test/lib"
 		},
 		{
-			"origin": "https://github.com/mucbuc/plank.git",
-			"path": "test/"
+			"origin": "https://github.com/mucbuc/drop.git",
+			"path": "test/lib"
 		}
 	]
 }

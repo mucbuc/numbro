@@ -1,6 +1,7 @@
 {
-	'includes':[
-		'../traverse/traverse.gypi'
+	'includes': [
+		'../traverse/traverse.gypi',
+		'../drop/def.gypi',
 	],
 	'target_defaults': {
 		'sources': [
