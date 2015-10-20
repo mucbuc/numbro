@@ -1,5 +1,5 @@
 #include <iostream>
-#include <plank/src/test.h>
+#include "test.h"
 
 #include <lib/drop/interface.h>
 
