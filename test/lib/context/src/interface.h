@@ -45,6 +45,8 @@ TODO:
 #include <type_traits>
 #include <iostream>
 
+#include <lib/context/src/fwd.h>
+#include <lib/context/src/default_subject.h>
 #include <lib/traverse/interface.h>
 
 namespace om636

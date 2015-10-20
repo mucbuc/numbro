@@ -1,7 +1,8 @@
-#include <iostream>
 #include <fstream>
-#include <vector>
 #include <functional>
+#include <iostream>
+#include <sstream>
+#include <vector>
 
 #include <lib/context/src/interface.h>
 #include <lib/context/src/forward_policy.h>
