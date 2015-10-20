@@ -13,18 +13,10 @@ to_do:
     - test I/O operators
 */
 
+#include <tuple>
+#include <sstream>
 
-namespace om636
-{
-    namespace default_subject
-    {
-        template<class> struct policy;
-    }
-
-    template<class T, template<class> class U = default_subject::policy>
-    struct context;
-}
-
+#include <lib/context/src/fwd.h>
 #include <lib/context/src/interface.h>
 #include <lib/context/src/default_subject.h>
 
@@ -38,6 +30,9 @@ namespace om636
         typedef om636::default_subject::policy< T > base_type;
         typedef typename std::tuple_element< 0, typename base_type::value_type >::type value_type;
         
+        using base_type::on_read; 
+        using base_type::on_write; 
+
         template<class V>
         static value_type on_init( V & s )
         {
@@ -76,6 +71,50 @@ namespace om636
         a = b;
         ASSERT( a.m_value == 7777 );
 
+        FOOTER;
+    }
+    
+    template<class T>
+    void run_io_test()
+    {
+        using namespace std;
+        using namespace om636;
+        
+        typedef context< tuple< int, int >, default_subject::policy > number_type;
+        number_type a( make_tuple(0, 0) );
+
+        stringstream( "1 2" ) >> a;
+        ASSERT( get<0>(a.value_ref()) == 1 )(get<0>(a.value_ref()));
+        ASSERT( get<1>(a.value_ref()) == 2 )(get<1>(a.value_ref()));
+        
+        stringstream tmp;
+        tmp << a;
+        
+        ASSERT( tmp.str() == "1 2" );
+        
+        FOOTER;
+    }
+
+    template<class T>
+    void run_io_quad_test()
+    {
+        using namespace std;
+        using namespace om636;
+        
+        typedef context< tuple< int, int, int, int >, default_subject::policy > number_type;
+        number_type a( make_tuple(0, 0, 0, 0) );
+        stringstream( "2 3 5 7" ) >> a;
+        
+        ASSERT( get<0>(a.value_ref()) == 2 )(get<0>(a.value_ref()));
+        ASSERT( get<1>(a.value_ref()) == 3 )(get<1>(a.value_ref()));
+        ASSERT( get<2>(a.value_ref()) == 5 )(get<2>(a.value_ref()));
+        ASSERT( get<3>(a.value_ref()) == 7 )(get<3>(a.value_ref()));
+        
+        stringstream tmp;
+        tmp << a;
+        
+        ASSERT( tmp.str() == "2 3 5 7" );
+        
         FOOTER;
     }
 
