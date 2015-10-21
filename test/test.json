@@ -1,0 +1,9 @@
+{
+	"import":[
+		"lib/numbro/def.json"
+	],
+	"sources": [
+		"src/main.cpp",
+		"src/matrix_test.h"
+	]
+}
