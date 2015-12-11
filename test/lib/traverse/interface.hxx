@@ -742,7 +742,7 @@ namespace om636
                 static U visit( T t, U visitor )
                 {
                     using namespace std;
-                    auto o( get< 0 >(t) );
+                    auto & o( get< 0 >(t) );
                     visitor( o );
                     visitor( o, get< 1 >(t) );
                     return permutation::visit( t, visitor );
@@ -752,7 +752,7 @@ namespace om636
                 static U visit_if( T t, U visitor )
                 {
                     using namespace std;
-                    auto o( get< 0 >(t) );
+                    auto & o( get< 0 >(t) );
                     if ( visitor( o ) &&  visitor( o, get< 1 >(t) ) )
                         return permutation::visit_if( t, visitor );
                     return visitor;
@@ -791,7 +791,7 @@ namespace om636
                 static U visit( T t, U visitor )
                 {
                     using namespace std;
-                    auto o( get< 0 >(t) );
+                    auto & o( get< 0 >(t) );
                     visitor( o );
                     visitor( o, get< 1 >(t) );
                     return visitor;
@@ -801,7 +801,7 @@ namespace om636
                 static U visit_if( T t, U visitor )
                 {
                     using namespace std;
-                    auto o( get< 0 >(t) );
+                    auto & o( get< 0 >(t) );
                     if (visitor( o ))
                         visitor( o, get< 1 >(t) );
                     return visitor;
