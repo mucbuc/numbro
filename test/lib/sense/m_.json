@@ -1,16 +1,7 @@
 {
-	"dependencies": [
-		{
-			"origin": "https://github.com/mucbuc/traverse.git",
-			"path": "test/lib"
-		},
-		{
-			"origin": "https://github.com/mucbuc/context.git",
-			"path": "test/lib"
-		},
-		{
-			"origin": "https://github.com/mucbuc/drop.git",
-			"path": "test/lib"
-		}
+	"test/lib": [
+		"https://github.com/mucbuc/traverse.git",
+		"https://github.com/mucbuc/context.git",
+		"https://github.com/mucbuc/drop.git"
 	]
 }
