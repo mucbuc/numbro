@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "test.h"
+#include <tmp/src/test.h>
 
 int main(int argc, const char * argv[])
 {
