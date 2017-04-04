@@ -1,8 +1,10 @@
 {	
-	"import": [
-		"lib/context/def.json",
-		"lib/sense/def.json",
-		"lib/static/def.json"
+	"includes": [
+		"../context/def.json",
+		"../drop/def.json",
+		"../sense/def.json",
+		"../static/def.json",
+		"../traverse/traverse.json"
 	],
 	"sources": [
 		"src/additive.h",
