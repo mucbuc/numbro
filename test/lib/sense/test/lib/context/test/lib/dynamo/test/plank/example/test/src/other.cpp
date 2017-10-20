@@ -2,11 +2,11 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[])
+int main(int argc, const char* argv[])
 {
-	ASSERT( true );
+    ASSERT(true);
 
-	using namespace std;
-	cout << "hello" << endl;
-	return 0;
+    using namespace std;
+    cout << "hello" << endl;
+    return 0;
 }
