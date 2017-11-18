@@ -1,7 +1,0 @@
-{
-	"sources": [
-		"interface.h",
-		"interface.hxx",
-		"mathfunctors.h"
-	]
-}
