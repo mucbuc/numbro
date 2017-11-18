@@ -1,9 +1,0 @@
-{
-	"import":[
-		"lib/sense/def.json"
-	],
-	"sources": [
-		"src/main.cpp",
-		"src/subject.h"
-	]
-}

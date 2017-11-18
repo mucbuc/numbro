@@ -1,7 +1,0 @@
-{
-	"test/lib": [
-		"https://github.com/mucbuc/traverse.git",
-		"https://github.com/mucbuc/context.git",
-		"https://github.com/mucbuc/drop.git"
-	]
-}
