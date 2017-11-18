@@ -1,8 +1,0 @@
-{
-	"includes":[
-		"lib/traverse/traverse.gypi"
-	],
-	"sources": [
-		"src/main.cpp"
-	]
-}
