@@ -1,7 +1,7 @@
 #include <iostream>
+#include <tmp/src/test.h>
 
 #include "matrix_test.h"
-#include <tmp/src/test.h>
 
 int main(int argc, const char* argv[])
 {
