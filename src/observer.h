@@ -18,7 +18,7 @@ namespace math {
         // types
         typedef T context_type;
 
-        virtual ~observer();
+        virtual ~observer() = default;
 
         // comparisons
         virtual bool on_equal(const context_type&, const context_type&) const = 0;
@@ -44,7 +44,7 @@ namespace math {
         typedef T base_type;
         typedef typename base_type::context_type context_type;
 
-        virtual ~value_observer();
+        virtual ~value_observer() = default;
         virtual bool on_swap(context_type&, context_type&) const;
     };
 
